@@ -11,11 +11,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, PropType, Prop } from 'vue'
+import { EventItem } from '../types'
 export default defineComponent ({
   props: {
     event: {
-      type: Object,
+      type: Object as PropType<EventItem>,
       required: true
     }
   }
